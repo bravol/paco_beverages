@@ -37,7 +37,7 @@ const Services = () => {
           </span>
         </div>
         <div className="">
-          <div className="mt-12">
+          <div className="mt-12 ">
             <p className=" text-3xl md:text-4xl lg:text-5xl  font-montserrat text-pacoGreen uppercase  font-light mb-5">
               A
               <span className="block underline underline-offset-8 md:underline-offset-[16px] decoration-pacoRed">
@@ -51,7 +51,7 @@ const Services = () => {
             </p>
           </div>
           <div className=" flex flex-wrap gap-5 mt-10">
-            <div className="pt-20 pb-14 bg-pacoBg px-11 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white">
+            <div className="pt-16 pb-14 bg-pacoBg px-11 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white">
               <div className="absolute top-0 right-0 mt-10 mr-10">
                 <BsFillArrowUpRightCircleFill
                   size={30}
@@ -66,7 +66,7 @@ const Services = () => {
               </p>
             </div>
 
-            <div className="pt-20 pb-14 hover:bg-pacoBg px-11 md:w-[360px] w-full relative bg-pacoGreen hover:text-pacoGreen text-white">
+            <div className="pt-16 pb-14 hover:bg-pacoBg px-11 md:w-[360px] w-full relative bg-pacoGreen hover:text-pacoGreen text-white">
               <div className="absolute top-0 right-0 mt-10 mr-10">
                 <BsFillArrowUpRightCircleFill
                   size={30}
@@ -79,7 +79,7 @@ const Services = () => {
                 currently focused on juice production
               </p>
             </div>
-            <div className="pt-20 pb-14 bg-pacoBg px-11 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white">
+            <div className="pt-16 pb-14 bg-pacoBg px-11 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white">
               <div className="absolute top-0 right-0 mt-10 mr-10">
                 <BsFillArrowUpRightCircleFill
                   size={30}

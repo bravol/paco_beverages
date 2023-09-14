@@ -100,7 +100,7 @@ const Home = () => {
             <img src={ImageHouse} alt="" className="h-[270px]" />
           </div>
 
-          <p className=" mt-6 font-montserrat md:text-6xl text-5xl text-white uppercase">
+          <p className=" mt-6 font-montserrat md:text-6xl text-4xl text-center md:text-start text-white uppercase">
             GET <span className=" md:block">TO KNOW</span>
             <span className="underline ml-2  md:underline-offset-[16px] underline-offset-8 decoration-white">
               US

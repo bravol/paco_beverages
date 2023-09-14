@@ -56,14 +56,17 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className=" flex items-center mx-8">
-            <img src={ImageDrinks} alt="" className="" />
+          <div className=" flex items-center mx-8 ">
+            <div className=" relative">
+              <div className="h-10 w-3 bg-pacoRed -mb-6 z-10 absolute top-0 left-0"></div>
+              <img src={ImageDrinks} alt="" className="" />
+            </div>
           </div>
         </div>
       </div>
-      <div className=" px-16">
+      <div className=" md:px-16 px-4">
         <div className="md:flex ">
-          <p className=" font-montserrat text-5xl text-pacoGreen">
+          <p className=" font-montserrat md:text-5xl text-4xl text-pacoGreen text-center md:text-start">
             WHY YOU SHOULD CHOOSE US
           </p>
           <p className=" font-montserrat text-base text-pacoBlack">
@@ -73,7 +76,7 @@ const AboutUs = () => {
         </div>
         <div className=" flex flex-wrap gap-5 mt-10">
           <div className="pt-10 pb-10 bg-pacoBg px-9 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoBlack hover:text-white">
-            <div className="h-10 w-3 bg-pacoGold -mb-6 z-10 absolute top-0 right-0"></div>
+            <div className="h-10 w-3 bg-pacoGold hover:bg-pacoRed -mb-6 z-10 absolute top-0 right-0"></div>
             <p className="font-montserrat text-xl">WE USE LOCAL MATERIALS</p>
             <p className="font-karla text-xs mt-3 ">
               We are strong proponents of the Buy Uganda Build Uganda train of
@@ -82,7 +85,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="pt-10 pb-10 hover:bg-pacoBg px-9 md:w-[360px] w-full relative bg-pacoGreen hover:text-pacoGreen text-white md:mt-5 md:-mb-5">
-            <div className="h-10 w-3 bg-pacoGold -mb-6 z-10 absolute top-0 right-0"></div>
+            <div className="h-10 w-3 hover:bg-pacoGold bg-pacoRed -mb-6 z-10 absolute top-0 right-0"></div>
             <p className="font-montserrat text-xl">QUALITY PRODUCTS</p>
             <p className="font-karla text-xs mt-3 ">
               We manufacture products with you in mind. The Paco alcoholic
@@ -92,7 +95,7 @@ const AboutUs = () => {
           </div>
           <span>
             <div className="pt-10 pb-10 bg-pacoBg px-9 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white md:mt-10 md:-mb-10">
-              <div className="h-10 w-3 bg-pacoGold -mb-6 z-10 absolute top-0 right-0"></div>
+              <div className="h-10 w-3 bg-pacoGold hover:bg-pacoRed -mb-6 z-10 absolute top-0 right-0"></div>
               <p className="font-montserrat text-xl">UNIQUE TASTE</p>
               <p className="font-karla text-xs mt-3 ">
                 Catering to a multicultural demographic, we crafted a taste that
