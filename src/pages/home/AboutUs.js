@@ -81,7 +81,7 @@ const AboutUs = () => {
               directly from them
             </p>
           </div>
-          <div className="pt-10 pb-10 hover:bg-pacoBg px-9 md:w-[360px] w-full relative bg-pacoGreen hover:text-pacoGreen text-white md:mt-4 md:-mb-4">
+          <div className="pt-10 pb-10 hover:bg-pacoBg px-9 md:w-[360px] w-full relative bg-pacoGreen hover:text-pacoGreen text-white md:mt-5 md:-mb-5">
             <div className="h-10 w-3 bg-pacoGold -mb-6 z-10 absolute top-0 right-0"></div>
             <p className="font-montserrat text-xl">QUALITY PRODUCTS</p>
             <p className="font-karla text-xs mt-3 ">
@@ -91,7 +91,7 @@ const AboutUs = () => {
             </p>
           </div>
           <span>
-            <div className="pt-10 pb-10 bg-pacoBg px-9 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white md:mt-8 md:-mb-8">
+            <div className="pt-10 pb-10 bg-pacoBg px-9 md:w-[360px] w-full relative hover:bg-pacoGreen text-pacoGreen hover:text-white md:mt-10 md:-mb-10">
               <div className="h-10 w-3 bg-pacoGold -mb-6 z-10 absolute top-0 right-0"></div>
               <p className="font-montserrat text-xl">UNIQUE TASTE</p>
               <p className="font-karla text-xs mt-3 ">
