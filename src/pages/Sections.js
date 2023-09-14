@@ -1,6 +1,6 @@
 import React from "react";
 import PacoLogo from "../assets/images/pacol_logo.png";
-import Home from "./Home";
+import Home from "./home/Home";
 
 const Sections = () => {
   return (
