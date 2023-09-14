@@ -3,6 +3,7 @@ import PacoLogo from "../assets/images/pacol_logo.png";
 import Home from "./home/Home";
 import Services from "./home/Services";
 import AboutUs from "./home/AboutUs";
+import ContactUs from "./home/ContactUs";
 
 const Sections = () => {
   return (
@@ -23,6 +24,7 @@ const Sections = () => {
         <Home />
         <Services />
         <AboutUs />
+        <ContactUs />
       </div>
     </div>
   );

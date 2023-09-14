@@ -61,7 +61,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className=" h-screen px-16">
+      <div className=" px-16">
         <div className="md:flex ">
           <p className=" font-montserrat text-5xl text-pacoGreen">
             WHY YOU SHOULD CHOOSE US
