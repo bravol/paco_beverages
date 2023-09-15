@@ -89,7 +89,7 @@ const Home = () => {
             <span className=" ml-8 cursor-pointer uppercase bg-pacoGold py-3 px-12 rounded-[32px] text-white font-montserrat text-xs">
               THE PACO TONTO
             </span>
-            <p className="uppercase  ml-8 md:ml-0 w-full font-montserrat lg:text-2xl text-xl md:text-center ">
+            <p className="uppercase  sm:ml-8 md:ml-0 w-full font-montserrat lg:text-2xl text-xl md:text-center ">
               AN UNMISTAKABLE AFRICAN TASTE
             </p>
             <Link to="contact-us" smooth={true} duration={500}>
@@ -101,8 +101,8 @@ const Home = () => {
         </div>
       </div>
       {/* ANOTHER SECTION */}
-      <div className=" bg-pacoGreen mx-auto md:px-6 lg:px-16 px-4 md:flex pb-24 w-full">
-        <div className=" w-full lg:w-2/6 mt-12 md:pt-4">
+      <div className=" bg-pacoGreen mx-auto md:px-6 lg:px-16 px-4 md:flex pb-16 w-full">
+        <div className=" w-full lg:w-2/6 pt-12 mt-12 md:pt-4">
           <div className=" relative">
             <div className="h-10 w-3 bg-pacoRed -mb-6 z-10 absolute top-0 left-0 "></div>
             <img src={ImageHouse} alt="" className="h-[270px]" />
@@ -118,7 +118,7 @@ const Home = () => {
           <img
             src={ArrowTopLeft}
             alt=""
-            className=" md:ml-40 md:mt-5 hidden md:block"
+            className=" md:ml-40 lg:ml-[300px] md:mt-5 lg:-mt-10 hidden md:block"
           />
         </div>
 

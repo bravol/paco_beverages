@@ -1,28 +1,31 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Sections from "./pages/Sections";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  // Function to update the screen width state
-  const updateScreenWidth = () => {
-    setScreenWidth(window.innerWidth);
-  };
+  // // Function to update the screen width state
+  // const updateScreenWidth = () => {
+  //   setScreenWidth(window.innerWidth);
+  // };
 
-  useEffect(() => {
-    // Add an event listener to track screen width changes
-    window.addEventListener("resize", updateScreenWidth);
+  // useEffect(() => {
+  //   // Add an event listener to track screen width changes
+  //   window.addEventListener("resize", updateScreenWidth);
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("resize", updateScreenWidth);
-    };
-  }, []);
+  //   // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener("resize", updateScreenWidth);
+  //   };
+  // }, []);
   return (
-    <div>
-      {/* <p>Current Screen Width: {screenWidth}px</p> */}
-      <Sections />
-    </div>
+    <ChakraProvider>
+      <div>
+        {/* <p>Current Screen Width: {screenWidth}px</p> */}
+        <Sections />
+      </div>
+    </ChakraProvider>
   );
 }
 

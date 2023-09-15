@@ -10,6 +10,8 @@ import {
 import PacoLogo from "../../assets/images/pacol_logo.png";
 
 const ContactUs = () => {
+  //get the current year
+  const currentYear = new Date().getFullYear();
   return (
     <div className=" md:mt-28 mt-16 h-screen w-full  scroll-smooth">
       <div className=" bg-pacoGreen">
@@ -97,8 +99,8 @@ const ContactUs = () => {
       </div>
       <div className=" pb-10 flex justify-between lg:mx-16 md:mx-6 mx-4 border-t-2 border-t-pacoGreen text-pacoGreen text-xs font-karla">
         <p className=" flex items-center">
-          <FaCopyright />
-          2023 All Rights Reserved
+          <FaCopyright className=" mr-2" />
+          {currentYear} All Rights Reserved
         </p>
         <p>www.pacobeverages.com</p>
       </div>
