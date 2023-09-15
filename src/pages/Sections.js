@@ -8,7 +8,7 @@ import ContactUs from "./home/ContactUs";
 const Sections = () => {
   return (
     <div className="mt-10">
-      <div className=" flex justify-between mx-4 md:mx-16">
+      <div className=" flex justify-between px-4 lg:px-16 md:px-6">
         <img
           src={PacoLogo}
           alt="Paco log"

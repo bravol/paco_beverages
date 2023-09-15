@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className=" w-full  scroll-smooth">
       <div className="mt-10 bg-pacoGreen mb-16 pb-10">
-        <div className="md:px-16 px-4 md:flex ">
+        <div className="lg:px-16 md:px-6 px-4 md:flex ">
           <div className=" md:w-2/3 w-full   pt-16">
             <p className=" font-montserrat text-white md:text-5xl text-4xl uppercase">
               OUR STORY
@@ -13,7 +13,7 @@ const AboutUs = () => {
             <p className=" font-karla text-xs md:text-sm mt-2 text-white">
               WHY WE DO WHAT WE DO
             </p>
-            <p className=" font-montserrat text-xs mt-8 text-white">
+            <p className=" font-montserrat text-xs mt-8 text-white text-justify">
               The brainchild of Chris Tugume, Alex Orimwesige & Patrick
               Mutabwire, Paco Beverages Uganda Limited started in Kikuube
               district at Kyarushesa Trading Center, Kyangwali subcounty in
@@ -64,7 +64,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className=" md:px-16 px-4">
+      <div className=" lg:px-16 md:px-4 px-4">
         <div className="md:flex ">
           <p className=" font-montserrat md:text-5xl text-4xl text-pacoGreen text-center md:text-start">
             WHY YOU SHOULD CHOOSE US
