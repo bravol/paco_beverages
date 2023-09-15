@@ -4,6 +4,7 @@ import Home from "./home/Home";
 import Services from "./home/Services";
 import AboutUs from "./home/AboutUs";
 import ContactUs from "./home/ContactUs";
+import { Link, Element } from "react-scroll";
 
 const Sections = () => {
   return (
@@ -14,17 +15,37 @@ const Sections = () => {
           alt="Paco log"
           className=" md:w-52 md:h-20 w-28 h-12 cursor-pointer"
         />
-        <span className=" flex space-x-4 md:space-x-16 uppercase text-pacoGreen font-medium md:text-base text-sm cursor-pointer">
-          <p>About us</p>
-          <p>Our Services</p>
-          <p>Contact us</p>
-        </span>
+        <nav>
+          <ul className="flex space-x-4 md:space-x-16 uppercase text-pacoGreen font-medium md:text-base text-sm">
+            <li className=" cursor-pointer">
+              <Link to="about-us" smooth={true} duration={500}>
+                About Us
+              </Link>
+            </li>
+            <li className=" cursor-pointer">
+              <Link to="services" smooth={true} duration={500}>
+                Our Services
+              </Link>
+            </li>
+            <li className=" cursor-pointer">
+              <Link to="contact-us" smooth={true} duration={500}>
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div>
         <Home />
-        <Services />
-        <AboutUs />
-        <ContactUs />
+        <Element name="services">
+          <Services />
+        </Element>
+        <Element name="about-us">
+          <AboutUs />
+        </Element>
+        <Element name="contact-us">
+          <ContactUs />
+        </Element>
       </div>
     </div>
   );

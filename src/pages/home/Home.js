@@ -6,6 +6,7 @@ import ImageHouse from "../../assets/images/paco_house1.jpg";
 import ArrowTopLeft from "../../assets/images/paco_topleft.png";
 import ArrowBottomLef from "../../assets/images/paco_bottomleft.png";
 import { FaEnvelope } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -91,9 +92,11 @@ const Home = () => {
             <p className="uppercase  ml-8 md:ml-0 w-full font-montserrat lg:text-2xl text-xl md:text-center ">
               AN UNMISTAKABLE AFRICAN TASTE
             </p>
-            <button className="ml-8  py-3 px-6 text-xs font-karla bg-pacoGreen uppercase text-white hover:bg-white hover:text-pacoGreen hover:border hover:border-pacoGreen">
-              Contact Us
-            </button>
+            <Link to="contact-us" smooth={true} duration={500}>
+              <button className="ml-8 mt-3  py-3 px-6 text-xs font-karla bg-pacoGreen uppercase text-white hover:bg-white hover:text-pacoGreen hover:border hover:border-pacoGreen">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -125,10 +128,12 @@ const Home = () => {
               We are a beverages company of humble beginnings, established in
               November 2020
             </p>
-            <span className="flex items-center lg:w-2/5 w-full justify-center gap-3 py-2 px-5 text-xs font-karla bg-white uppercase text-pacoGreen hover:bg-pacoBg hover:text-white hover:border hover:border-white transition ease-in-out">
-              <FaEnvelope size={24} />
-              Contact Us
-            </span>
+            <Link to="contact-us" smooth={true} duration={500}>
+              <span className="flex cursor-pointer items-center lg:w-2/5 w-full justify-center gap-3 py-2 px-5 text-xs font-karla bg-white uppercase text-pacoGreen hover:bg-pacoBg hover:text-white hover:border hover:border-white transition ease-in-out">
+                <FaEnvelope size={24} />
+                Contact Us
+              </span>
+            </Link>
 
             <div className="flex md:mt-24 mt-10">
               <div className=" h-8 w-10 bg-pacoGold text-center text-white mr-9">

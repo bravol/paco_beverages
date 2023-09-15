@@ -24,7 +24,7 @@ const ContactUs = () => {
             Do you have something you would like to let us know or clarify for
             you? Please reach out to us below
           </p>
-          <div className=" lg:pb-44 md:pb-20 pb-16 grid gap-5 lg:w-2/5">
+          <div className=" lg:pb-32 md:pb-20 pb-16 grid gap-5 lg:w-2/5">
             <input
               type="text"
               placeholder="Name"
