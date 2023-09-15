@@ -41,8 +41,10 @@ const AboutUs = () => {
                 OUR MISSION
               </p>
               <p className="font-karla text-xs text-white font-light mt-2">
-                Döplarade förpappring virtuell våldtäkt tvillingshoppare plarade
-                repp i kvasirade mikronat växtblindhet.
+                To be the leading producers of soft and hard drinks in East &
+                Central Africa supporting the local (indigenous) communities by
+                buying their products and offering employment to the local
+                communities.
               </p>
             </div>
             <div className=" mt-9">
