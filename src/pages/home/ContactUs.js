@@ -71,7 +71,7 @@ const ContactUs = () => {
           theme: "colored",
         });
       } else {
-        toast.error("Email not sent please try again later", {
+        toast.error("Message not sent please try again later", {
           position: "top-right",
           autoClose: 4000,
           hideProgressBar: true,
@@ -83,9 +83,9 @@ const ContactUs = () => {
         });
       }
     } catch (error) {
-      console.log("Error occured in sending email:", error);
+      console.log("Error occured in sending message:", error);
       toast.error(
-        "An error occured while sending the email please try again later",
+        "An error occured while sending the message please try again later",
         {
           position: "top-right",
           autoClose: 4000,
