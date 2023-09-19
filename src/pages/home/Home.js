@@ -86,7 +86,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-5 bg-pacoBg pb-14 md:pb-7 pt-8 md:-ml-24 space-y-8 mb-1">
-            <span className=" ml-8 cursor-pointer uppercase bg-pacoGold py-3 px-12 rounded-[32px] text-white font-montserrat text-xs">
+            <span className=" ml-8 uppercase bg-pacoGold py-3 px-12 rounded-[32px] text-white font-montserrat text-xs">
               THE PACO TONTO
             </span>
             <p className="uppercase  sm:ml-8 md:ml-0 w-full font-montserrat lg:text-2xl text-xl md:text-center ">
