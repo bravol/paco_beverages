@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaCopyright,
   FaEnvelope,
@@ -8,10 +8,100 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import PacoLogo from "../../assets/images/pacol_logo.png";
+import { toast } from "react-toastify";
+import { Spinner } from "@chakra-ui/react";
 
 const ContactUs = () => {
   //get the current year
   const currentYear = new Date().getFullYear();
+  const [isSending, setIsSending] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  //sending email to paco beverages
+  const handleSubmit = async (e) => {
+    //create a json object with the form data
+    e.preventDefault();
+
+    //create a json object with the form data
+    const requestBody = JSON.stringify(formData);
+
+    try {
+      setIsSending(true);
+
+      // Send a POST request to the PACO EMAIL API
+      const response = await fetch(
+        "https://lyxaevents.com/api/send_paco_email/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: requestBody,
+        }
+      );
+      if (response.status === 200) {
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        //Email sent successfully
+        toast.success("Message sent to Paco beverages successfully!", {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      } else {
+        toast.error("Email not sent please try again later", {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      }
+    } catch (error) {
+      console.log("Error occured in sending email:", error);
+      toast.error(
+        "An error occured while sending the email please try again later",
+        {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        }
+      );
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <div className=" md:mt-28 mt-16 h-screen w-full  scroll-smooth">
       <div className=" bg-pacoGreen">
@@ -26,30 +116,62 @@ const ContactUs = () => {
             Do you have something you would like to let us know or clarify for
             you? Please reach out to us below
           </p>
-          <div className=" lg:pb-32 md:pb-20 pb-16 grid gap-5 lg:w-2/5">
+
+          <form
+            className=" lg:pb-32 md:pb-20 pb-16 grid gap-5 lg:w-2/5"
+            onSubmit={handleSubmit}
+          >
             <input
+              required="required"
               type="text"
               placeholder="Name"
               className=" h-11 pl-3 text-xs font-karla"
+              name="name"
+              value={formData?.name}
+              onChange={handleInputChange}
             />
             <input
+              required="required"
               type="email"
               placeholder="Email"
               className=" h-11 pl-3 text-xs font-karla"
+              name="email"
+              value={formData?.email}
+              onChange={handleInputChange}
             />
             <textarea
+              required="required"
               id="txtid"
-              name="txtname"
               rows="4"
               cols="50"
               maxlength="200"
               className=" h-40 pl-3 text-sm font-karla"
               placeholder="Your Message here..."
+              name="message"
+              value={formData?.message}
+              onChange={handleInputChange}
             ></textarea>
-            <span className=" bg-pacoGold hover:bg-white py-2 flex items-center justify-center gap-2 text-white hover:text-pacoGold font-karla text-xs uppercase font-semibold cursor-pointer">
-              <FaEnvelope size={25} className="" /> Send message
-            </span>
-          </div>
+            <button
+              type="submit"
+              className={`${
+                isSending
+                  ? "bg-white cursor-not-allowed disabled:opacity-75 text-pacoGold"
+                  : "bg-pacoGold hover:bg-white text-white"
+              } py-2 flex items-center justify-center gap-2  hover:text-pacoGold font-karla text-xs uppercase font-semibold`}
+              disabled={isSending}
+            >
+              {isSending ? (
+                <>
+                  <p>Sending message...</p>
+                  <Spinner size="md" color="pacoGold" />
+                </>
+              ) : (
+                <>
+                  <FaEnvelope size={25} className="" /> Send message
+                </>
+              )}
+            </button>
+          </form>
         </div>
       </div>
       <div className=" md:pb-20 pb-10 lg:px-16 md:px-6 px-4 md:mt-10 mt-6 md:flex">
