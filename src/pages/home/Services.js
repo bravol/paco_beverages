@@ -4,7 +4,7 @@ import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 
 const Services = () => {
   return (
-    <div className=" w-screen lg:px-16 md:px-6 px-4 scroll-smooth md:mb-24 mb-10">
+    <div className=" w-full lg:px-16 md:px-6 px-4 scroll-smooth md:mb-24 mb-10">
       <div className="md:mt-16 mt-10">
         <div className=" grid justify-items-center ">
           <p className="uppercase font-montserrat md:text-6xl text-4xl text-pacoGreen font-light">

@@ -10,7 +10,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className=" w-screen">
+    <div className="w-full">
       <div className="px-4 lg:px-16 md:flex md:px-6 w-full mb-4">
         {/* ist column */}
         <div className=" w-full lg:w-1/3 md:1/2  md:mt-24 mt-8 ">
